@@ -4,12 +4,13 @@ import Feed from '../pages/Feed'
 import CreatePost from '../pages/CreatePost'
 
 
+
 const App = () => {
   return (
     <Router>
       <Routes>
+        <Route path="/" element={<CreatePost />} />
         <Route path="/posts" element={<Feed />} />
-        <Route path="/create-post" element={<CreatePost />} />
       </Routes>
     </Router>
   )
